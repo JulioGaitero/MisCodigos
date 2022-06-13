@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sucesión de Fibonacci</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <img src="img/logo.png" alt="fantasma">
+    <div id="principal">
+      <h1>Sucessión de Fibonacci</h1>
+      <p>Introduce un numero del 1 al 100</p>
+      <input id="numeros" type="number" min="1" max="100" /><br /><br />
+      <input onclick="calculaFibo()" id="enviar" type="submit" value="Enviar"/>
+      <div id="resultados">
+          <ol id="listaNumeros"></ol>
+      </div>
+    </div>
+    <script src="js/fibonacci.js"></script>
+  </body>
+</html>
