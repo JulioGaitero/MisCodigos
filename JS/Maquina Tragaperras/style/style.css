@@ -1,0 +1,29 @@
+img {
+    width: 165px;
+    padding: 33px;
+    border: 1px solid black;
+}
+
+#palanca {
+    
+    border: 0px;
+
+}
+
+ul {
+
+    font-weight: bold;
+    padding-left: 0px;
+    margin-bottom:21px ;
+}
+
+li {
+    font-weight: normal;
+    margin-left: 18px;
+}
+
+#numeroMonedas {
+
+    font-size: 33px;
+
+}

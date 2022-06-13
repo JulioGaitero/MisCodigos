@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <LINK REL=StyleSheet HREF="style/style.css" TYPE="text/css">
+      
+    <title>MAQUINA TRAGAPERRAS</title>
+    
+</head>
+<body>
+    <h1>Introduce monedas</h1>
+    <input id="ranuraMonedas" type="number" min="0" value="0">
+    <input id="botonIntroducir" type="button" value="Introducir" onclick="meterMonedas()">
+    <p>El número de monedas actual es de:</p>
+    <p id="numeroMonedas">0</p>
+
+    <div id="interfaceGrafica">
+        <img id="casilla1" src="img/pingu.png">
+        <img id="casilla2" src="img/pingu.png">
+        <img id="casilla3" src="img/pingu.png">
+        <img id="palanca" src="img/palancaUP.png" onmousedown="palancaAbajo()" onmouseup="palancaArriba()" >
+
+    </div>
+
+    <input id="botonSalir" type="button" value="Salir" onclick="salirPartida()">
+
+    <div id="interfaceTexto">
+
+      <ul id="listaEventos">Historial de movimientos</ul>
+
+    </div> 
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
