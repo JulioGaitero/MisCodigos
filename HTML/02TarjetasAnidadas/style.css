@@ -1,0 +1,81 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #151515;
+}
+
+#fantasma{
+    width: 210px;
+    display: block;
+    margin: auto;
+}
+
+.tarjetas{
+    display: flex;
+    width: 100%;
+    padding: 50px;
+    justify-content: center;
+}
+
+.tarjeta{
+    background-color:#f6f6f6;
+    margin: 12px;
+    color: #151515;
+    width: 270px;
+    height: 300px;
+    border-radius: 9px;
+    padding: 27px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    transition: all 0.3s ease;
+    box-shadow: -3px 0 9px rgb(0, 0, 0,0.3);
+}
+
+.tarjeta a{
+    color: #151515;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tarjeta a:hover{
+    
+}
+
+.titulo{
+    flex:1;
+}
+
+.tarjeta:hover{
+    margin-right: 60px;
+    transform: rotate(3deg) translateY(-15px);
+}
+
+.titulotarjeta{
+    font-size: 21px;
+}
+
+.autor a{
+    display: flex;
+    align-items: center;
+
+}
+
+img {
+    width: 36px;
+}
+
+.fecha {
+    font-size: 12px;
+}
+
+.titulotarjeta{
+    font-size: 15px;
+}
+
+span {
+    font-size: 15px;
+}
