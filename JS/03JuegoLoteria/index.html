@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Juego de la Loteria</title>
+  </head>
+  <body>
+    <img src="logo.png" alt="logo" />
+    <div id="pricipal">
+      <h1>LA LOTERIA</h1>
+
+      <div id="combinacion">
+        <input class="combinacion" id="numero1" required />
+        <input class="combinacion" id="numero2" required />
+        <input class="combinacion" id="numero3" required />
+        <input class="combinacion" id="numero4" required />
+        <input class="combinacion" id="numero5" required />
+        <input class="combinacion" id="numero6" required />
+      </div>
+      <div id="botoncombinacion">
+        <input type="submit" value="JUGAR" onclick="funcionJugar()" />
+      </div>
+
+      <div id="oculto">
+        <h2>RESULTADOS</h2>
+
+        <div id="resultados"></div>
+
+        <h2>NUMERO DE ACIERTOS</h2>
+
+        <p id="aciertos"></p>
+
+        <h2>PREMIO</h2>
+
+        <ul id="premio"></ul>
+      </div>
+    </div>
+
+    <script src="loteria.js"></script>
+  </body>
+</html>

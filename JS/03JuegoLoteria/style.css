@@ -1,0 +1,133 @@
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pricipal {
+    width: 636px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f8f1bf;
+    border-radius: 9px;
+    padding: 21px;
+  }
+  
+
+body {
+  background-color: #79bb9b;
+}
+
+.combinacion{
+  border-radius: 30px;
+  width: 45px;
+  height: 45px;
+  border: 0px;
+  text-align: center;
+  background-color: #79BB9B;
+  color: #F8F1BF;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 3px;
+}
+
+h1 {
+  color:#79BB9B;
+  text-align: center;
+}
+
+input[type=submit] {
+  background-color: #79BB9B;
+  color: #F8F1BF;
+  border: 0px;
+  height: 33px;
+  width: 81px;
+  border-radius: 3px;
+  font-weight: bold;
+  margin: 18px 0;
+}
+
+h2{
+  color:#79BB9B;
+  text-align: center;
+  font-size: 21px;
+  margin: 18px 0;
+
+}
+
+#resultados li{
+ 
+  display: inline-block;
+  padding: 15px;
+  min-width: 21px;
+  border-radius: 50%;
+  background-color: #79BB9B;
+  color: #F8F1BF;
+  margin-left: 12px;
+  font-weight: bold;
+
+}
+
+#resultados{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  text-align: center;
+}
+
+#aciertos {
+  color:#F8F1BF;
+  text-align: center;
+  font-size: 27px;
+  font-weight: bold;
+  background-color: #79BB9B;
+  border-radius: 9px;
+  width: 39%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px 0;
+}
+
+#premio{
+  list-style: none;  
+  
+}
+
+#premio li{
+ 
+  font-weight:bold;
+  color:#F8F1BF;
+  margin-left:-2em;
+  background-color: #79bb9b;
+  border-radius: 3px;
+  padding: 6px 0;
+  text-align: center;
+}
+
+#combinacion{
+  display: block;
+  text-align: center;
+}
+
+.combinacion:focus{
+  outline: none;
+ 
+}
+
+#botoncombinacion{
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#botoncombinacion input{
+  width: 210px;
+  height: 39px;
+  font-size: 21px;
+}
+
+#oculto {
+  display: none;
+}
+
