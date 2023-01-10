@@ -1,0 +1,4 @@
+interface InterfaceProcesar
+{
+    procedure procesarInterface();
+}
