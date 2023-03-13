@@ -1,0 +1,685 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(../img/fondo.svg);
+  background-color: #81a1c1;
+  background-attachment: fixed;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 12px;
+  color: #4c566a;
+}
+
+#cerrar_sesion {
+  background-color: #bccbda;
+  border: none;
+  border-radius: 6px;
+  padding: 6px;
+  color: #798ea3;
+}
+
+#buscar_tareas {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#input_buscar {
+  width: 100%;
+  margin-right: 21px;
+  border-radius: 6px;
+  border: 0px;
+  padding: 6px;
+  margin-left: 9px;
+  outline: none;
+}
+
+#categoria_tareas {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 12px 12px 12px;
+  font-size: 15px;
+  border-bottom: 1px solid #4c566a3b;
+  width: 96%;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#categoria_tareas a:hover {
+  color: #798ea39c;
+  cursor: pointer;
+}
+
+#buscar_tareas button {
+  background-color: #bccbda;
+  border: none;
+  border-radius: 9px;
+  padding: 0 9px;
+  color: #798ea3;
+}
+
+#enviar_tareas {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+#input_tareas {
+  width: 100%;
+  border-radius: 6px;
+  margin-right: 21px;
+  border: 0px;
+  padding: 6px;
+  outline: none;
+}
+
+#enviar_tareas button {
+  background-color: #bccbda;
+    border: none;
+    border-radius: 9px;
+    padding: 6px 9px;
+    color: #798ea3;
+}
+
+#contenedor {
+  width: 80%;
+  margin-left: auto;
+  margin-top: 21px;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  background: #eceff4;
+  min-height: 90vh;
+  border-radius: 6px;
+}
+
+#usuario {
+  width: 180px;
+  border-right: 1px solid #d8dee9;
+  background: #e5e9f0;
+  height: auto;
+  overflow-x: hidden;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+
+}
+
+#tareas {
+  width: 1040px;
+  padding: 12px 21px;
+  background-color: #eceff4;
+  overflow-x: hidden;
+}
+
+#foto_perfil {
+  width: 102px;
+  border-radius: 90%;
+  margin: 36px 0 0 0;
+  border: 3px solid #98a7b6;
+}
+
+.foto_perfil {
+  width: 102px;
+  border-radius: 90%;
+  margin: 36px 0 0 0;
+  border: 3px solid #98a7b6;
+  cursor: pointer;
+}
+#usuarios_encontrados {
+  display: flex;
+  justify-content: space-evenly;
+}
+#contenedor_perfil {
+  margin: 21px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contenedor_perfil h4 {
+  margin: 21px auto;
+}
+
+#crear_usuario {
+  display: flex;
+  flex-direction: column;
+}
+
+#crear_usuario input {
+  width: 96%;
+  border-radius: 6px;
+  border: 0px;
+  padding: 6px;
+  outline: none;
+  margin: 0 auto 21px auto;
+}
+#es_admin {
+  width: 21px !important;
+}
+
+#usuarios_abajo {
+  width: 96%;
+  display: flex;
+  flex-direction: column;
+}
+
+#label {
+  margin-left: auto;
+  margin-right: 6px;
+}
+
+#imagen {
+  margin-left: auto;
+  margin-right: 6px;
+}
+
+#boton_registrar {
+  padding: 9px;
+  background-color: #bccbda;
+  color: #798ea3;
+  width: 120px;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-left: auto;
+}
+h1 {
+  font-size: 21px;
+  margin-bottom: 0px;
+}
+
+.pendiente {
+  background-color: #d086706e;
+  color: #b86952;
+  padding: 4px;
+  border-radius: 9px;
+  margin-left: 15px;
+  margin-left: auto;
+  width: 60px;
+  text-align: center;
+}
+
+.aprobado {
+  background-color: #a3be8c48;
+  color: #7e9c64;
+  padding: 4px;
+  border-radius: 9px;
+  margin-left: 15px;
+  margin-left: auto;
+  width: 60px;
+  text-align: center;
+}
+
+.denegado {
+  background-color: #bf616a63;
+  color: #af505a;
+  padding: 4px;
+  border-radius: 9px;
+  margin-left: auto;
+  width: 60px;
+  text-align: center;
+}
+
+.lista_tareas li {
+  list-style: none;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.lista_tareas li input {
+  margin-right: 12px;
+}
+
+.lista_tareas {
+  padding-left: 0px;
+  margin-top: 12px;
+}
+
+#tareas_encontradas {
+  margin-top: 15px;
+}
+
+h2 {
+  padding: 12px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #4c566a42;
+}
+
+.tarea_recibida {
+  margin: 0px;
+}
+
+.icono_listado {
+  margin-left: 12px;
+}
+
+#Menu_administrador {
+  list-style: none;
+  margin: 9px;
+  padding: 0px;
+  height: auto;
+}
+
+#Menu_administrador li {
+  padding: 6px;
+  display: flex;
+  align-items: center;
+}
+
+#Menu_administrador li img {
+  margin-right: 21px;
+}
+
+.boton_administracion {
+  text-decoration: none;
+  color: #4c566a;
+}
+
+.boton_administracion:hover {
+  color: #798ea3;
+  cursor: pointer;
+}
+
+#buscar_usuario {
+  width: 96%;
+  border-radius: 6px;
+  border: 0px;
+  padding: 6px;
+  outline: none;
+  margin: auto;
+}
+
+#form_usuario {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#boton_borrar {
+  padding: 9px;
+  background-color: #bccbda;
+  color: #798ea3;
+  width: 120px;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-left: 15px;
+  display: none;
+  margin-left: auto;
+}
+
+#boton_editar {
+  padding: 9px;
+  background-color: #bccbda;
+  color: #798ea3;
+  width: 120px;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-left: 15px;
+  display: none;
+}
+
+#botones_usuario {
+  display: flex;
+}
+
+.UsuarioTurnos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+
+.TurnosImagen {
+  width: 51px;
+  border-radius: 90%;
+  margin: 0;
+  border: 3px solid #98a7b6;
+}
+
+.UsuarioRecibido {
+  padding: 12px;
+}
+
+.SinAsignar {
+  background-color: #d086706e;
+  color: #b86952;
+  padding: 4px;
+  margin: 9px;
+  border-radius: 9px;
+  margin-left: 9px;
+  width: 60px;
+  text-align: center;
+}
+
+.UsuarioTurnos {
+  border-bottom: 1px solid #d8dee9;
+  padding-bottom: 33px;
+}
+.MenuTurnos {
+  display: flex;
+  flex-direction: row;
+  background: #98a7b627;
+  border-radius: 6px;
+  padding: 3px;
+  margin-left: auto;
+  margin-top: 18px;
+}
+
+.MenuTurnos img {
+  margin-left: 6px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+#lista_turnos {
+  margin: 0px;
+  padding: 6px;
+}
+
+.UsuarioRecibidoMenu {
+  display: none;
+}
+
+.TurnoMananas {
+  background-color: #d48d786e;
+  color: #b86952;
+  padding: 6px;
+  margin: 9px;
+  border-radius: 9px;
+  margin-left: 9px;
+  width: 60px;
+  text-align: center;
+}
+
+.TurnoTardes {
+  background-color: #ebcb8bab;
+  color: #997a3c;
+  padding: 6px;
+  margin: 9px;
+  border-radius: 9px;
+  margin-left: 9px;
+  width: 60px;
+  text-align: center;
+}
+
+.TurnoNoches {
+  background-color: #81a1c19f;
+  color: #648ab1;
+  padding: 6px;
+  margin: 9px;
+  border-radius: 9px;
+  margin-left: 9px;
+  width: 60px;
+  text-align: center;
+}
+
+.TurnoLibre {
+  background-color: #a3be8c8e;
+  color: #718f58;
+  padding: 6px;
+  margin: 9px;
+  border-radius: 9px;
+  margin-left: 9px;
+  width: 60px;
+  text-align: center;
+}
+
+#barra_turnos {
+  width: 240px;
+  padding: 12px;
+  padding-bottom: 9px;
+  background-color: #e5e9f0;
+  border-left: 1px solid #7c7e8327;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+#mostrar_manana,
+#mostrar_tardes,
+#mostrar_noches,
+#mostrar_libres {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  padding: 0px;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.UsuarioTurno {
+  margin-right: 12px !important;
+  text-align: center;
+}
+
+.titulos_turnos {
+  padding: 9px;
+  margin: 0px;
+}
+
+#contenedor_mananas {
+  background-color: #d48d786e;
+  width: 210px;
+  height: 120px;
+  border-radius: 9px;
+  margin-bottom: 21px;
+  display: flex;
+  flex-direction: column;
+  padding: 9px;
+}
+
+#contenedor_tardes {
+  background-color: #ebcb8bab;
+  width: 210px;
+  height: 120px;
+  border-radius: 9px;
+  margin-bottom: 21px;
+  display: flex;
+  flex-direction: column;
+  padding: 9px;
+}
+
+#contenedor_noches {
+  background-color: #81a1c19f;
+  width: 210px;
+  height: 120px;
+  border-radius: 9px;
+  margin-bottom: 21px;
+  display: flex;
+  flex-direction: column;
+  padding: 9px;
+}
+
+#contenedor_libres {
+  background-color: #a3be8c48;
+  width: 210px;
+  height: 120px;
+  border-radius: 9px;
+  margin-bottom: 21px;
+  display: flex;
+  flex-direction: column;
+  padding: 9px;
+}
+
+#mostrar_noches,
+#mostrar_libres,
+#mostrar_tardes,
+#mostrar_mananas {
+  padding: 0px;
+}
+
+#administracion {
+  margin-top: 15px;
+}
+
+@media (max-width: 1554px){
+   
+  #contenedor{
+    flex-direction: column;
+    width: 880px;
+  }
+
+  #usuario {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  #foto_perfil{
+    margin: 33px !important;
+  }
+
+  #Menu_administrador {
+    margin-left: auto;
+    margin-right: 51px;
+
+  }
+  #administracion{
+    display: none;
+  }
+
+  #usuario p{
+    display: none;
+  }
+
+  #tareas{
+     width: 838px;;
+  }
+  #barra_turnos h2{
+    display: none;
+  }
+  #usuario{
+    width: 879px;
+    border-top-right-radius: 6px;
+
+  }
+  h1{
+    margin-top: 42px;
+    align-self: flex-start;
+    display: block;
+    position: relative;
+    left: 15px;
+  }
+  #cerrar_sesion{
+   
+  position: relative;
+  bottom: -20px;
+  left: -41px;
+  width: 63px;
+
+  }
+
+  #barra_turnos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 6px;
+    margin: 12px;
+    background-color: transparent;
+    border-left: 0px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+}
+
+@media (max-width: 900px){
+#contenedor{
+  width: 96%;
+}
+#tareas{
+  width: 95%;
+  padding: 0px;
+  margin: 12px;
+}
+
+#usuario{
+  width:auto;
+}}
+
+@media (max-width: 872px){
+  #barra_turnos{
+    justify-content: space-around;
+   width: 90%;
+  }
+
+  #contenedor_mananas{
+    
+    width: 33%;
+
+  }
+
+  #contenedor_tardes{
+    width: 33%;
+  }
+  #contenedor_noches{
+    width: 33%;
+  }
+  #contenedor_libres{
+ 
+    width: 33%;
+
+  }
+}
+
+@media (max-width: 757px){
+
+  #barra_turnos{
+    width: 81%;
+  }
+  #contenedor_mananas{
+    
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  #contenedor_tardes{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #contenedor_noches{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #contenedor_libres{
+ 
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+}
+
+@media (max-width: 521px){
+  #categoria_tareas{
+    font-size: 12px;
+  }
+
+
+}
+
+
+

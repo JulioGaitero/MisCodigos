@@ -1,0 +1,70 @@
+body{
+
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(img/fondo.svg);
+    background-color: #81a1c1;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;  
+    display: flex;     
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+#contenedor_formulario{
+    width: 390px;
+    height: 330px;
+    background-color: #c7d2dd;
+    border-radius: 9px;
+
+    box-shadow: 3px 3px 3px 3px #3b42526c;
+}
+
+#contenedor_formulario form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contenedor_formulario input{
+    padding: 9px;
+    border:0px;
+    border-radius: 6px;
+    margin: 9px;
+    text-align: center;
+    color:#4c566a;
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+
+}
+
+#contenedor_formulario img{
+    height: 150px;
+}
+
+#boton_login{
+    padding: 9px 36px !important;
+    background-color: #ffffff;
+}
+
+#boton_login:hover{
+    padding: 9px 36px !important;
+    background-color: #ffffffde;
+    cursor:pointer;
+}
+
+#error{
+    background-color: #bf616a;
+    padding: 6px;
+    border-radius: 3px;
+    color:#4c566a;
+    box-shadow: 3px 3px 3px 3px #3b42526c;
+}
+
