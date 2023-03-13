@@ -3,13 +3,13 @@ package Clases;
 public class L1ClaseVehiculo {
 
     // 1. Atributos
-    private String modelo;
-    private String fabricante;
-    private double cc;
-    private int anio;
-    private boolean segundaMano;
-    private int velocidad;
-    private L1ClaseMotor motor;
+    protected String modelo;
+    protected String fabricante;
+    protected double cc;
+    protected int anio;
+    protected boolean segundaMano;
+    protected int velocidad;
+    protected L1ClaseMotor motor;
 
     // 2. Constructores
 
